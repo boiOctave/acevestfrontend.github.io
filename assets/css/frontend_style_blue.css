@@ -524,7 +524,7 @@ h6 {
 
 .mobile-nav-toggle {
     position: fixed;
-    right: 15px;
+    right: 30px;
     top: 15px;
     z-index: 9998;
     border: 0;
@@ -544,7 +544,7 @@ h6 {
 .mobile-nav {
     position: fixed;
     top: 55px;
-    right: 15px;
+    right: 30px;
     bottom: 15px;
     left: 15px;
     z-index: 9999;
@@ -1768,8 +1768,30 @@ h6 {
         top: 13px;
     }
 }
+  
+.testimonial-item p{
+    white-space: normal;
+    display: flex;
+    position: relative;
+    left: 10px;
+    text-align: left;
+ }
 
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    display: var(--color-white);        /* color of the tracking area */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color:var(--color-primary);   /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+@media (max-width: 500px){
+
+.body{display: none;}
+}
+  }
 /*--------------------------------------------------------------
   # Thats it!
   --------------------------------------------------------------*/
