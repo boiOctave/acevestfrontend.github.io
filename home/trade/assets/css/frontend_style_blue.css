@@ -1778,6 +1778,28 @@ padding-left:8px;
 font-size: 1.2rem;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    display: var(--color-white);        /* color of the tracking area */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color:var(--color-primary);   /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+@media (max-width: 500px){
+
+.body{display: none;}
+}
+  }
+@media screen and (max-width:500px) {
+    .container
+    {
+        max-width: 100%;
+
+    }
+} 
+
 /* @media (max-width: 500px){
 
 .body{display: none;}
